@@ -1,0 +1,30 @@
+object FrmReadHelp: TFrmReadHelp
+  Left = 707
+  Height = 240
+  Top = 392
+  Width = 320
+  Caption = 'Справка'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '2.0.6.0'
+  object Label1: TLabel
+    Left = 17
+    Height = 15
+    Top = 15
+    Width = 122
+    Caption = 'Справка о программе'
+    ParentColor = False
+  end
+  object btnOK: TBitBtn
+    Left = 118
+    Height = 28
+    Top = 200
+    Width = 94
+    Default = True
+    DefaultCaption = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = btnOKClick
+    TabOrder = 0
+  end
+end

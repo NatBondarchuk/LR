@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="11">
+      <Unit0>
+        <Filename Value="SlideShow.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="24" Y="10"/>
+        <UsageCount Value="108"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="frmslideshow.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmSlide"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="FrmSlideShow"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="241"/>
+        <CursorPos Y="262"/>
+        <FoldState Value=" T3jD0H0421213A"/>
+        <UsageCount Value="108"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="option.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmOption"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Option"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="19"/>
+        <CursorPos X="19" Y="57"/>
+        <UsageCount Value="55"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="about.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmAbout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="About"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="11" Y="25"/>
+        <UsageCount Value="55"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\lazarus\lcl\include\menuitem.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1092"/>
+        <CursorPos Y="1116"/>
+        <UsageCount Value="40"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="C:\lazarus\lcl\include\fpimagebitmap.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="117"/>
+        <CursorPos X="12" Y="124"/>
+        <UsageCount Value="36"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="C:\lazarus\fpc\3.0.4\source\rtl\objpas\sysutils\filutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="131"/>
+        <CursorPos X="51" Y="157"/>
+        <UsageCount Value="30"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="C:\lazarus\lcl\include\picture.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="738"/>
+        <CursorPos X="16" Y="750"/>
+        <UsageCount Value="30"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="C:\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2889"/>
+        <CursorPos Y="2913"/>
+        <UsageCount Value="12"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\LR1\unit1.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="191"/>
+        <CursorPos X="6" Y="216"/>
+        <UsageCount Value="8"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="readhelp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FrmReadHelp"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="readHelp"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="17" Y="8"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit10>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="85" Column="16" TopLine="66"/>
+      </Position1>
+      <Position2>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="211" Column="49" TopLine="31"/>
+      </Position2>
+      <Position3>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="83" Column="23" TopLine="57"/>
+      </Position3>
+      <Position4>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="267" Column="22" TopLine="243"/>
+      </Position4>
+      <Position5>
+        <Filename Value="about.pas"/>
+        <Caret Column="11"/>
+      </Position5>
+      <Position6>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="216" Column="83" TopLine="161"/>
+      </Position6>
+      <Position7>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="217" Column="83" TopLine="162"/>
+      </Position7>
+      <Position8>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="218" Column="83" TopLine="163"/>
+      </Position8>
+      <Position9>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="384" Column="68" TopLine="288"/>
+      </Position9>
+      <Position10>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="265" Column="106" TopLine="274"/>
+      </Position10>
+      <Position11>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="267" Column="106" TopLine="266"/>
+      </Position11>
+      <Position12>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="345" Column="92" TopLine="241"/>
+      </Position12>
+      <Position13>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="374" Column="30" TopLine="292"/>
+      </Position13>
+      <Position14>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="176" Column="9" TopLine="152"/>
+      </Position14>
+      <Position15>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="178" Column="14" TopLine="154"/>
+      </Position15>
+      <Position16>
+        <Filename Value="option.pas"/>
+        <Caret Line="40" Column="33" TopLine="5"/>
+      </Position16>
+      <Position17>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="278" TopLine="150"/>
+      </Position17>
+      <Position18>
+        <Filename Value="option.pas"/>
+        <Caret Line="29" Column="15" TopLine="19"/>
+      </Position18>
+      <Position19>
+        <Filename Value="option.pas"/>
+        <Caret Line="56" Column="13" TopLine="20"/>
+      </Position19>
+      <Position20>
+        <Filename Value="option.pas"/>
+        <Caret Line="57" Column="42" TopLine="19"/>
+      </Position20>
+      <Position21>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="242" Column="18" TopLine="165"/>
+      </Position21>
+      <Position22>
+        <Filename Value="frmslideshow.pas"/>
+        <Caret Line="263" Column="35" TopLine="165"/>
+      </Position22>
+      <Position23>
+        <Filename Value="option.pas"/>
+        <Caret Line="54" Column="18" TopLine="19"/>
+      </Position23>
+      <Position24>
+        <Filename Value="option.pas"/>
+        <Caret Line="55" Column="18" TopLine="19"/>
+      </Position24>
+      <Position25>
+        <Filename Value="option.pas"/>
+        <Caret Line="56" Column="18" TopLine="19"/>
+      </Position25>
+      <Position26>
+        <Filename Value="option.pas"/>
+        <Caret Line="55" Column="18" TopLine="20"/>
+      </Position26>
+      <Position27>
+        <Filename Value="option.pas"/>
+        <Caret Line="54" Column="18" TopLine="19"/>
+      </Position27>
+      <Position28>
+        <Filename Value="option.pas"/>
+        <Caret Line="55" Column="18" TopLine="20"/>
+      </Position28>
+      <Position29>
+        <Filename Value="option.pas"/>
+        <Caret Line="54" Column="31" TopLine="19"/>
+      </Position29>
+      <Position30>
+        <Filename Value="option.pas"/>
+        <Caret Line="57" Column="19" TopLine="19"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

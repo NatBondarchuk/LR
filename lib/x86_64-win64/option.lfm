@@ -1,0 +1,175 @@
+object FrmOption: TFrmOption
+  Left = 674
+  Height = 306
+  Top = 356
+  Width = 574
+  BorderStyle = bsSingle
+  Caption = 'Настройки'
+  ClientHeight = 306
+  ClientWidth = 574
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Color = clBlack
+  Font.Height = -15
+  Font.Name = 'Calibri Light'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '2.0.6.0'
+  object GroupBox1: TGroupBox
+    Left = 16
+    Height = 128
+    Top = 16
+    Width = 536
+    Caption = 'Параметры показа изображений'
+    ClientHeight = 105
+    ClientWidth = 532
+    TabOrder = 0
+    object OrderSlide: TComboBox
+      Left = 16
+      Height = 26
+      Top = 64
+      Width = 464
+      ItemHeight = 18
+      Items.Strings = (
+        'В алфавитном порядке (А-Я)'
+        'В обратном алфавитном порядке (Я-А)'
+        'В случайном порядке'
+      )
+      TabOrder = 0
+      Text = '<По умолчанию>'
+    end
+    object lblTimer: TLabel
+      Left = 16
+      Height = 28
+      Top = 8
+      Width = 200
+      AutoSize = False
+      Caption = 'Таймер смены слайдов (сек.):'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -15
+      Font.Name = 'Calibri Light'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object SlideTime: TEdit
+      Left = 216
+      Height = 28
+      Top = 8
+      Width = 36
+      Alignment = taRightJustify
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clBlack
+      Font.Height = -15
+      Font.Name = 'Book Antiqua'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 1
+      Text = '0,5'
+    end
+    object Label2: TLabel
+      Left = 16
+      Height = 18
+      Top = 40
+      Width = 187
+      Caption = 'Порядок вывод изображений'
+      ParentColor = False
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 16
+    Height = 144
+    Top = 152
+    Width = 536
+    Caption = 'Параметры текста'
+    ClientHeight = 121
+    ClientWidth = 532
+    TabOrder = 1
+    object editPath: TEdit
+      Left = 16
+      Height = 26
+      Top = 16
+      Width = 464
+      TabOrder = 0
+      Text = '1.txt.txt'
+    end
+    object Button1: TButton
+      Left = 488
+      Height = 26
+      Top = 16
+      Width = 30
+      Caption = '...'
+      OnClick = Read
+      TabOrder = 1
+    end
+    object OrderText: TComboBox
+      Left = 16
+      Height = 26
+      Top = 80
+      Width = 350
+      ItemHeight = 18
+      ItemIndex = 0
+      Items.Strings = (
+        '<По умолчанию>'
+        'В алфавитном порядке (А-Я)'
+        'В обратном алфавитном порядке (Я-А)'
+        'В случайном порядке'
+      )
+      TabOrder = 2
+      Text = '<По умолчанию>'
+    end
+    object Label1: TLabel
+      Left = 18
+      Height = 18
+      Top = 56
+      Width = 206
+      Caption = 'Порядок отображения надписей'
+      ParentColor = False
+    end
+    object btnColor: TSpeedButton
+      Left = 392
+      Height = 24
+      Top = 79
+      Width = 113
+      Color = clRed
+      Flat = True
+      Transparent = False
+      OnClick = ColorText
+    end
+  end
+  object OpenFile: TOpenDialog
+    Filter = 'Text and Word files only|*.txt;*.doc'
+    left = 392
+    top = 16
+  end
+  object clrText: TColorDialog
+    Color = clRed
+    CustomColors.Strings = (
+      'ColorA=000000'
+      'ColorB=000080'
+      'ColorC=008000'
+      'ColorD=008080'
+      'ColorE=800000'
+      'ColorF=800080'
+      'ColorG=808000'
+      'ColorH=808080'
+      'ColorI=C0C0C0'
+      'ColorJ=0000FF'
+      'ColorK=00FF00'
+      'ColorL=00FFFF'
+      'ColorM=FF0000'
+      'ColorN=FF00FF'
+      'ColorO=FFFF00'
+      'ColorP=FFFFFF'
+      'ColorQ=C0DCC0'
+      'ColorR=F0CAA6'
+      'ColorS=F0FBFF'
+      'ColorT=A4A0A0'
+    )
+    left = 480
+    top = 32
+  end
+end

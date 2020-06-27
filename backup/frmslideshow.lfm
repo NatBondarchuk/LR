@@ -1,0 +1,358 @@
+object FrmSlide: TFrmSlide
+  Left = 585
+  Height = 838
+  Top = 57
+  Width = 1302
+  Align = alCustom
+  Anchors = []
+  AutoSize = True
+  Caption = 'Слайд-шоу'
+  ClientHeight = 818
+  ClientWidth = 1302
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Color = clCaptionText
+  Font.Height = -15
+  Font.Name = 'Book Antiqua'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Menu = MenuSlide
+  OnCreate = WhatWhom
+  ParentBiDiMode = False
+  Position = poMainFormCenter
+  LCLVersion = '2.0.6.0'
+  object PanImg: TPanel
+    Left = 0
+    Height = 743
+    Top = 0
+    Width = 1302
+    Align = alClient
+    Alignment = taLeftJustify
+    Anchors = []
+    AutoSize = True
+    BevelColor = clSilver
+    BevelOuter = bvLowered
+    ClientHeight = 743
+    ClientWidth = 1302
+    Color = clWindow
+    DoubleBuffered = False
+    ParentBackground = False
+    ParentColor = False
+    ParentDoubleBuffered = False
+    TabOrder = 0
+    OnClick = Pan
+    object Image1: TImage
+      Left = 1
+      Height = 701
+      Top = 21
+      Width = 1300
+      AntialiasingMode = amOn
+      Align = alClient
+      BorderSpacing.CellAlignHorizontal = ccaCenter
+      BorderSpacing.CellAlignVertical = ccaCenter
+      Center = True
+      DragMode = dmAutomatic
+      Enabled = False
+      ParentShowHint = False
+      Proportional = True
+      Stretch = True
+      StretchInEnabled = False
+    end
+    object lblPath: TLabel
+      Left = 1
+      Height = 20
+      Top = 1
+      Width = 1300
+      Align = alTop
+      Caption = 'Directory not selected'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Tempus Sans ITC'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsItalic]
+      ParentColor = False
+      ParentFont = False
+      ParentShowHint = False
+      WordWrap = True
+    end
+    object lblCount: TLabel
+      Left = 1
+      Height = 20
+      Top = 722
+      Width = 1300
+      Align = alBottom
+      Alignment = taCenter
+      Caption = '0  /  0'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Book Antiqua'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsItalic]
+      ParentColor = False
+      ParentFont = False
+    end
+    object lblSlide: TLabel
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Side = asrCenter
+      AnchorSideBottom.Side = asrCenter
+      Left = 152
+      Height = 400
+      Top = 160
+      Width = 1000
+      Align = alCustom
+      Alignment = taCenter
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clWhite
+      Font.Height = -29
+      Font.Name = 'Book Antiqua'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentColor = False
+      ParentFont = False
+      WordWrap = True
+    end
+    object Label1: TLabel
+      AnchorSideRight.Side = asrBottom
+      Left = 939
+      Height = 26
+      Top = 21
+      Width = 362
+      Alignment = taRightJustify
+      Anchors = [akRight]
+      Caption = 'Выход из полноэкранного режима'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clRed
+      Font.Height = -21
+      Font.Name = 'Book Antiqua'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentColor = False
+      ParentFont = False
+      OnClick = Label1Click
+    end
+  end
+  object PanTheme: TPanel
+    Left = 0
+    Height = 75
+    Top = 743
+    Width = 1302
+    Align = alBottom
+    BevelColor = 9868950
+    ClientHeight = 75
+    ClientWidth = 1302
+    ParentColor = False
+    TabOrder = 1
+    object imgTheme: TImage
+      Tag = 5
+      Left = 1
+      Height = 73
+      Top = 1
+      Width = 1300
+      AntialiasingMode = amOff
+      Align = alClient
+      Anchors = [akRight, akBottom]
+      AutoSize = True
+      BorderSpacing.CellAlignHorizontal = ccaRightBottom
+      BorderSpacing.CellAlignVertical = ccaCenter
+      Center = True
+      ParentShowHint = False
+      StretchOutEnabled = False
+      StretchInEnabled = False
+    end
+    object BtnNext: TSpeedButton
+      Left = 696
+      Height = 35
+      Top = 5
+      Width = 70
+      BorderSpacing.Bottom = 2
+      BorderSpacing.Around = 40
+      BorderSpacing.InnerBorder = 30
+      Caption = 'След.'
+      Color = clDefault
+      Flat = True
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Calibri'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      Spacing = 45
+      Transparent = False
+      OnClick = ChangeSlide
+      ParentBidiMode = False
+      ParentFont = False
+    end
+    object BtnPrev: TSpeedButton
+      Left = 504
+      Height = 35
+      Top = 5
+      Width = 70
+      BorderSpacing.Bottom = 2
+      BorderSpacing.Around = 40
+      BorderSpacing.InnerBorder = 30
+      Caption = 'Пред.'
+      Color = clDefault
+      Flat = True
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Calibri'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      Layout = blGlyphBottom
+      Spacing = 45
+      Transparent = False
+      OnClick = ChangeSlide
+      ParentBidiMode = False
+      ParentFont = False
+    end
+    object BtnPause: TSpeedButton
+      AnchorSideLeft.Side = asrCenter
+      AnchorSideTop.Side = asrCenter
+      AnchorSideRight.Side = asrCenter
+      AnchorSideBottom.Side = asrBottom
+      Left = 600
+      Height = 35
+      Top = 5
+      Width = 70
+      BorderSpacing.Bottom = 2
+      BorderSpacing.Around = 40
+      BorderSpacing.InnerBorder = 30
+      Caption = 'Пуск'
+      Color = clDefault
+      Flat = True
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Calibri'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      Spacing = 45
+      Transparent = False
+      OnClick = Pause
+      ParentBidiMode = False
+      ParentFont = False
+    end
+  end
+  object MenuSlide: TMainMenu
+    ParentBidiMode = False
+    OwnerDraw = True
+    left = 52
+    top = 48
+    object MenuMod: TMenuItem
+      Caption = 'Режим'
+      object MenuBase: TMenuItem
+        AutoCheck = True
+        Caption = 'Обычный'
+        Checked = True
+        RadioItem = True
+        OnClick = ScreenMod
+      end
+      object MenuFull: TMenuItem
+        AutoCheck = True
+        Caption = 'Полноэкранный'
+        RadioItem = True
+        OnClick = ScreenMod
+      end
+    end
+    object MenuTheme: TMenuItem
+      Caption = 'Тема'
+      object MenuDark: TMenuItem
+        AutoCheck = True
+        Caption = 'Тёмная'
+        Checked = True
+        RadioItem = True
+        OnClick = Theme
+      end
+      object MenuChild: TMenuItem
+        AutoCheck = True
+        Caption = 'Детская'
+        RadioItem = True
+        OnClick = Theme
+      end
+      object MenuLight: TMenuItem
+        AutoCheck = True
+        Caption = 'Светлая'
+        RadioItem = True
+        OnClick = Theme
+      end
+    end
+    object MenuLang: TMenuItem
+      Caption = 'Русский/English'
+      object MenuRus: TMenuItem
+        AutoCheck = True
+        Caption = 'Русский'
+        Checked = True
+        RadioItem = True
+        OnClick = ChangeLang
+      end
+      object MenuEng: TMenuItem
+        AutoCheck = True
+        Caption = 'English'
+        RadioItem = True
+        OnClick = ChangeLang
+      end
+    end
+    object MenuCatalog: TMenuItem
+      Caption = 'Каталог'
+      object MenuKCosm: TMenuItem
+        AutoCheck = True
+        Caption = 'Космос'
+        Checked = True
+        RadioItem = True
+        OnClick = ChooseCatalog
+      end
+      object MenuKFlowers: TMenuItem
+        AutoCheck = True
+        Caption = 'Цветы'
+        RadioItem = True
+        OnClick = ChooseCatalog
+      end
+      object MenuKOther: TMenuItem
+        AutoCheck = True
+        Caption = 'Другой...'
+        RadioItem = True
+        OnClick = ChooseCatalog
+      end
+    end
+    object MenuOption: TMenuItem
+      Caption = 'Настройки'
+      OnClick = MenuOptionClick
+    end
+    object MenuHelp: TMenuItem
+      Caption = 'Справка'
+      object MenuReadHelp: TMenuItem
+        Caption = 'Читать справку'
+        OnClick = Help
+      end
+      object MenuAbout: TMenuItem
+        Caption = 'О программе'
+        OnClick = Help
+      end
+    end
+  end
+  object OpenPic: TOpenPictureDialog
+    left = 56
+    top = 183
+  end
+  object SelDir: TSelectDirectoryDialog
+    left = 55
+    top = 252
+  end
+  object TimePic: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = StartTime
+    left = 56
+    top = 120
+  end
+end
